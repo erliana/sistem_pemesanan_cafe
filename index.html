@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+	<script
+		src="https://kit.fontawesome.com/64d58efce2.js"
+		crossorigin="anonymous">
+	</script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<title>SILAHKAN PESAN</title>
+</head>
+<body>
+	<div class="container">
+		<div class="forms-container">
+			<div class="order-takeaway">
+			<form action="" class="order-form">
+				<h2 class="title">Order</h2>
+				<div class="input-field">
+					<i class="fas fa-user"></i>
+					<input type="text" placeholder="Nama Pemesan">
+				</div>
+				<div class="input-field">
+					<i class="fas fa-bookmark"></i>
+					<input type="text" placeholder="Nomor Meja">
+				</div>
+					<div class="grid-container">
+					<p class="form-text">Silahkan pilih menu :</p>
+						<button id="btn-food" class="item1 btn solid">makanan</button>
+
+
+						<input type="submit" value="minuman" class="item2 btn solid">							
+					</div>
+				<div class="input-field">
+					<i class="fas fa-money-check"></i>
+					<input type="text" placeholder="Total Harga">
+				</div>
+					<input type="submit" value="pesan" class="btn solid">
+
+			</form>
+
+			<form action="" class="takeaway-form">
+				<h2 class="title">Takeaway</h2>
+				<div class="input-field">
+					<i class="fas fa-user"></i>
+					<input type="text" placeholder="Nama Pemesan">
+				</div>
+				<div class="input-field">
+					<i class="fas fa-bookmark"></i>
+					<input type="text" placeholder="Nomor Meja">
+				</div>
+					<div class="grid-container">
+					<p class="form-text">Silahkan pilih menu :</p>
+						<input type="submit" value="makanan" id="btn-food" class="item1 btn solid">						
+						<input type="submit" value="minuman" class="item2 btn solid">							
+					</div>
+				<div class="input-field">
+					<i class="fas fa-money-check"></i>
+					<input type="text" placeholder="Total Harga">
+				</div>
+					<input type="submit" value="pesan" class="btn solid">
+
+			</form>
+			
+				
+			</div>
+		</div>
+		<div class="panels-container">
+			<div class="panel left-panel">
+				<div class="content">
+					<h3>Mau bawa pulang?</h3>
+					<p>Silahkan pesan disini!</p>
+					<button class="btn transparent" id="takeaway-btn">Take away</button>
+				</div>
+				<img src="img/take.svg" class="image" alt="">
+			</div>
+
+			<div class="panel right-panel">
+				<div class="content">
+					<h3>Mau makan disini?</h3>
+					<p>Silahkan pesan disini!</p>
+					<button class="btn transparent" id="order-btn">Pesan</button>
+				</div>
+
+				<img src="img/order.svg" class="image" alt="">
+			</div>
+
+
+		</div>
+	</div>
+
+	
+
+	<script src="js/app.js"></script>
+
+</body>
+</html>
