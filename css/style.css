@@ -8,14 +8,23 @@
 body, input{
 	font-family: 'poppins', sans-serif;
 }
-.container{
+.wadah{
 	position: relative;
 	width: 100%;
 	min-height: 100vh;
 	background-color: #fff;
 	overflow: hidden;
 }
-.container:before{
+
+.wadah2{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.wadah:before{
 	content: '';
 	position: absolute;
 	width: 2000px;
@@ -28,7 +37,7 @@ body, input{
 	z-index: 6;
 	transition: 1.8s ease-in-out
 }
-.forms-container{
+.forms-wadah{
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -99,7 +108,7 @@ form{
 	font-weight: 500px;
 
 }
-.btn{
+.tombol{
 	width: 150px;
 	height: 49px;
 	border: none;
@@ -113,7 +122,7 @@ form{
 	margin: 10px 0;
 	transition: 0.5s;
 }
-.btn:hover{
+.tombol:hover{
 	background-color: #fc4900;
 
 }
@@ -122,7 +131,7 @@ form{
 	margin-left: -10px;
 	font-size: 1rem;
 }
-.panels-container{
+.panels-wadah{
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -168,7 +177,7 @@ form{
 	font-size: 0.95rem;
 	padding: 0.7rem 0;
 }
-.btn.transparent{
+.tombol.transparent{
 	margin: 0;
 	background: none;
 	border: 2px solid #fff;
@@ -186,44 +195,44 @@ form{
 }
 
 /*ANIMATION*/
-.container.takeaway-mode:before {
+.wadah.takeaway-mode:before {
 	transform: translate(100%, -50%);
 	right: 52%
 }
 
 
-.container.takeaway-mode .left-panel .image,
-.container.takeaway-mode .left-panel .content{
+.wadah.takeaway-mode .left-panel .image,
+.wadah.takeaway-mode .left-panel .content{
 	transform: translateX(-800px);
 }
 
-.container.takeaway-mode .order-takeaway{
+.wadah.takeaway-mode .order-takeaway{
 	left: 25%;
 }
 
-.container.takeaway-mode .right-panel .content,
-.container.takeaway-mode .right-panel .image{
+.wadah.takeaway-mode .right-panel .content,
+.wadah.takeaway-mode .right-panel .image{
 	transform: translateX(0%);
 }
 
-.container.takeaway-mode .left-panel{
+.wadah.takeaway-mode .left-panel{
 	pointer-events: none;
 }
 
-.container.takeaway-mode .right-panel{
+.wadah.takeaway-mode .right-panel{
 	pointer-events: all;
 }
 
-.container.takeaway-mode form.order-form{
+.wadah.takeaway-mode form.order-form{
 	z-index: 1;
 	opacity: 0;
 }
-.container.takeaway-mode form.takeaway-form{
+.wadah.takeaway-mode form.takeaway-form{
 	z-index: 2;
 	opacity: 1;
 }
 @media (max-width: 870px) {
-  .container {
+  .wadah {
     min-height: 800px;
     height: 100vh;
   }
@@ -235,11 +244,11 @@ form{
   }
 
   .order-takeaway,
-  .container.takeaway-mode .order-takeaway {
+  .wadah.takeaway-mode .order-takeaway {
     left: 50%;
   }
 
-  .panels-container {
+  .panels-wadah {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr 1fr;
   }
@@ -281,13 +290,13 @@ form{
     padding: 0.5rem 0;
   }
 
-  .btn.transparent {
+  .tombol.transparent {
     width: 110px;
     height: 35px;
     font-size: 0.7rem;
   }
 
-  .container:before {
+  .wadah:before {
     width: 1500px;
     height: 1500px;
     transform: translateX(-50%);
@@ -298,19 +307,19 @@ form{
     transition: 2s ease-in-out;
   }
 
-  .container.takeaway-mode:before {
+  .wadah.takeaway-mode:before {
     transform: translate(-50%, 100%);
     bottom: 32%;
     right: initial;
   }
 
-  .container.takeaway-mode .left-panel .image,
-  .container.takeaway-mode .left-panel .content {
+  .wadah.takeaway-mode .left-panel .image,
+  .wadah.takeaway-mode .left-panel .content {
     transform: translateY(-300px);
   }
 
-  .container.takeaway-mode .right-panel .image,
-  .container.takeaway-mode .right-panel .content {
+  .wadah.takeaway-mode .right-panel .image,
+  .wadah.takeaway-mode .right-panel .content {
     transform: translateY(0px);
   }
 
@@ -319,7 +328,7 @@ form{
     transform: translateY(300px);
   }
 
-  .container.takeaway-mode .order-takeaway {
+  .wadah.takeaway-mode .order-takeaway {
     top: 5%;
     transform: translate(-50%, 0);
   }
@@ -336,16 +345,16 @@ form{
   .panel .content {
     padding: 0.5rem 1rem;
   }
-  .container {
+  .wadah {
     padding: 1.5rem;
   }
 
-  .container:before {
+  .wadah:before {
     bottom: 72%;
     left: 50%;
   }
 
-  .container.takeaway-mode:before {
+  .wadah.takeaway-mode:before {
     bottom: 28%;
     left: 50%;
   }
@@ -407,7 +416,7 @@ form{
     padding: 20px;
 }
  
-.close-btn {
+.close-tombol {
     position: absolute;
     width: 30px;
     height: 30px;
@@ -418,8 +427,8 @@ form{
     cursor: pointer;
 }
  
-.close-btn:after,
-.close-btn:before {
+.close-tombol:after,
+.close-tombol:before {
     content: "";
     position: absolute;
     width: 70%;
@@ -432,11 +441,11 @@ form{
     transform: rotate(45deg);
 }
  
-.close-btn:before {
+.close-tombol:before {
     transform: rotate(-45deg);
 }
  
-.action-btn{
+.aksi-tombol{
   display:inline-block;
   padding: 10px 20px;
   background:#4caf50;
@@ -444,3 +453,58 @@ form{
   border-radius:15px;
   cursor: pointer;
 }
+.kolum{
+  width: 25%;
+  float: left;
+  padding: 0px 10px;
+
+}
+
+.baris:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen (max-width: 600px)
+{
+  .kolum{
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.kartu{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0,2);
+  max-width: 300px;
+  margin: auto;
+  background-color: white;
+  text-align: center;
+  border-radius: 40px;
+  padding-bottom: 15px;
+  margin-top: 20px;
+  background: none;
+  border: 2px solid #fa5f25;
+  font-weight: 600;
+  font-size: 0.8rem;
+
+}
+.bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+/* Back to Top */
+html {scroll-behavior:smooth;}
+.ignielToTop {width:50px; height:50px; position:fixed; bottom:50px; right: 50px; z-index:99; cursor:pointer; border-radius:100px; transition:all .5s; background:#fa5f25 url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' fill='%23fff'/%3E%3C/svg%3E") no-repeat center center;}
+.ignielToTop:hover {background:#1d2129 url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' fill='%23fff'/%3E%3C/svg%3E") no-repeat center center;}

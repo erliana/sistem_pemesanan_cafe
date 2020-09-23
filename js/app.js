@@ -1,14 +1,14 @@
-const takeaway_btn = document.querySelector("#takeaway-btn");
-const order_btn = document.querySelector("#order-btn");
-const container = document.querySelector(".container");
+const takeaway_tombol = document.querySelector("#takeaway-tombol");
+const order_tombol = document.querySelector("#order-tombol");
+const wadah = document.querySelector(".wadah");
 
-takeaway_btn.addEventListener("click", () => {
-  container.classList.add("takeaway-mode");
+takeaway_tombol.addEventListener("click", () => {
+  wadah.classList.add("takeaway-mode");
 });
 
 
-order_btn.addEventListener("click", () => {
-  container.classList.remove("takeaway-mode");
+order_tombol.addEventListener("click", () => {
+  wadah.classList.remove("takeaway-mode");
 });
 
 
